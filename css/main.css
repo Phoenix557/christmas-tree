@@ -1,0 +1,10 @@
+/* Do not change anything in this file. 
+If this file is changed from its original state, support will not be avalible. */
+
+img {
+  position: absolute;
+}
+
+.hide {
+  opacity: 0;
+}

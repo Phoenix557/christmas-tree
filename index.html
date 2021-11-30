@@ -1,0 +1,35 @@
+<!-- Do not change nothing in this file. 
+If file is changed from original state, support is not available. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <title>Christmas Tree</title>
+</head>
+
+<body>
+  <input onchange="toggleImage('lightsImage')" checked type="checkbox" name="lights" />
+  <label>Lights</label>
+  <input onchange="toggleImage('starsImage')" checked type="checkbox" name="stars" />
+  <label>Stars</label>
+  <input onchange="toggleImage('topperImage')" checked type="checkbox" name="topper" />
+  <label>Topper</label>
+  <br />
+  <img src="images/tree.png" />
+  <img id="starsImage" src="images/stars.png" />
+  <img id="topperImage" src="images/topper.png" />
+  <img id="lightsImage" src="images/lights.png" />
+
+  <script>
+    function toggleImage(imageId) {
+      document.getElementById(imageId).classList.toggle("hide");
+    }
+  </script>
+</body>
+
+</html>
